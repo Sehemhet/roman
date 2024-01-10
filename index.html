@@ -1,0 +1,1389 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font1|Font2|Font3&display=swap">
+    <title>Document</title>
+</head>
+<body>
+<header>
+
+</header>
+
+
+<main>
+
+    <section id="section_1" class="back1">
+        <div class="in pad20t pad20b f fc gap20">
+
+            <h1 class="c4">
+                Я ваш финансовый помошник
+            </h1>
+            <div class="f fac f_f gap10 w fw">
+                <div class="h150 b4 pad10 f _f_ fac fc gap10 f150 scale">
+                    <img class="h100 contain" src="img/icon/6.gif" alt="">
+                    <a class="c1">Кредиты</a>
+                </div>
+                <div class="h150 b4 pad10 f _f_ fac fc gap10 f150 scale">
+                    <img class="h100 contain" src="img/icon/1.gif" alt="">
+                    <a class="c1">Кредитные карты</a>
+                </div>
+                <div class="h150 b4 pad10 f _f_ fac fc gap10 f150 scale">
+                    <img class="h100 contain" src="img/icon/2.gif" alt="">
+                    <a class="c1">Дебетовые карты</a>
+                </div>
+                <div class="h150 b4 pad10 f _f_ fac fc gap10 f150 scale">
+                    <img class="h100 contain" src="img/icon/3.gif" alt="">
+                    <a class="c1">Займы</a>
+                </div>
+                <div class="h150 b4 pad10 f _f_ fac fc gap10 f150 scale">
+                    <img class="h100 contain" src="img/icon/5.gif" alt="">
+                    <a class="c1">Ипотека</a>
+                </div>
+                <div class="h150 b4 pad10 f _f_ fac fc gap10 f150 scale">
+                    <img class="h100 contain" src="img/icon/4.gif" alt="">
+                    <a class="c1">Вклады</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section_2" class="b6 pad50t pad50b">
+        <div class="in f fc gap50">
+
+            <div class="f fc w gap20">
+                <h2 class="w _t_">
+                    Лучшие предложения
+                </h2>
+                <div class="f fac gap10 _f_ fw">
+                    <button class="btn" onclick="showTab('tab_1')">
+                        <span class="">
+                            Кредиты
+                        </span>
+                    </button>
+                    <button class="btn" onclick="showTab('tab_2')">
+                        <span>
+                            Кредитные карты
+                        </span>
+                    </button>
+                    <button class="btn" onclick="showTab('tab_3')">
+                        <span>
+                            Дебетовые карты
+                        </span>
+                    </button>
+                    <button class="btn" onclick="showTab('tab_4')">
+                        <span>
+                            Займы
+                        </span>
+                    </button>
+                    <button class="btn" onclick="showTab('tab_5')">
+                        <span>
+                            Ипотека
+                        </span>
+                    </button>
+                    <button class="btn" onclick="showTab('tab_6')">
+                        <span>
+                            Вклады
+                        </span>
+                    </button>
+                </div>
+
+
+    <script>
+        // JavaScript для переключения табов
+        document.addEventListener("DOMContentLoaded", function() {
+            // Показать первый таб при загрузке страницы
+            showTab('tab_1');
+        });
+
+        function showTab(tabId) {
+            // Скрыть все табы
+            var tabs = document.querySelectorAll('.tabs__block');
+            tabs.forEach(function(tab) {
+                tab.classList.remove('active-tab');
+            });
+
+            // Показать выбранный таб
+            var selectedTab = document.getElementById(tabId);
+            selectedTab.classList.add('active-tab');
+        }
+    </script>
+
+
+                <div id="tab_1" class="f w f_f fw gap10 tabs__block">
+                    <div class="f f_f gap10 f500 fw">
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b1.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До 3 000 000 $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    от 3 до 1000 лет
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b2.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Вааше шара
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Сумма
+                            </span>
+                                <span>
+                                До 10 000 000 $
+                            </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Срок
+                            </span>
+                                <span>
+                                от Х до Х лет
+                            </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f f_f gap10 f500 fw">
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b3.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До n+ $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    бесрочно
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b4.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Сумма
+                            </span>
+                                <span>
+                                От 1 000 000 000 $
+                            </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Срок
+                            </span>
+                                <span>
+                                от 100 до 200 лет
+                            </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_2" class="f w f_f fw gap10 tabs__block">
+                    <div class="f f_f gap10 f500 fw">
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b2.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Вааше шара
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Сумма
+                            </span>
+                                <span>
+                                До 10 000 000 $
+                            </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Срок
+                            </span>
+                                <span>
+                                от Х до Х лет
+                            </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b1.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До 3 000 000 $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    от 3 до 1000 лет
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f f_f gap10 f500 fw">
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b4.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Сумма
+                            </span>
+                                <span>
+                                От 1 000 000 000 $
+                            </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Срок
+                            </span>
+                                <span>
+                                от 100 до 200 лет
+                            </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b3.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До n+ $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    бесрочно
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_3" class="f w f_f fw gap10 tabs__block">
+                    <div class="f f_f gap10 f500 fw">
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b3.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До n+ $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    бесрочно
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b4.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Сумма
+                            </span>
+                                <span>
+                                От 1 000 000 000 $
+                            </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Срок
+                            </span>
+                                <span>
+                                от 100 до 200 лет
+                            </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f f_f gap10 f500 fw">
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b1.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До 3 000 000 $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    от 3 до 1000 лет
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b2.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Вааше шара
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Сумма
+                            </span>
+                                <span>
+                                До 10 000 000 $
+                            </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Срок
+                            </span>
+                                <span>
+                                от Х до Х лет
+                            </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_4" class="f w f_f fw gap10 tabs__block">
+                    <div class="f f_f gap10 f500 fw">
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b2.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Вааше шара
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Сумма
+                            </span>
+                                <span>
+                                До 10 000 000 $
+                            </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Срок
+                            </span>
+                                <span>
+                                от Х до Х лет
+                            </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b4.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Сумма
+                            </span>
+                                <span>
+                                От 1 000 000 000 $
+                            </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Срок
+                            </span>
+                                <span>
+                                от 100 до 200 лет
+                            </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f f_f gap10 f500 fw">
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b3.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До n+ $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    бесрочно
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b1.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До 3 000 000 $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    от 3 до 1000 лет
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_5" class="f w f_f fw gap10 tabs__block">
+                    <div class="f f_f gap10 f500 fw">
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b3.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До n+ $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    бесрочно
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b1.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До 3 000 000 $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    от 3 до 1000 лет
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f f_f gap10 f500 fw">
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b2.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Вааше шара
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Сумма
+                            </span>
+                                <span>
+                                До 10 000 000 $
+                            </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Срок
+                            </span>
+                                <span>
+                                от Х до Х лет
+                            </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b4.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Сумма
+                            </span>
+                                <span>
+                                От 1 000 000 000 $
+                            </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                            <span>
+                                Срок
+                            </span>
+                                <span>
+                                от 100 до 200 лет
+                            </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab_6" class="f w f_f fw gap10 tabs__block">
+                    <div class="f f_f gap10 f500 fw">
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b3.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До n+ $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    бесрочно
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b3.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До n+ $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    бесрочно
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f f_f gap10 f500 fw">
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b1.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До 3 000 000 $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    от 3 до 1000 лет
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                        <div class="f fc f_f gap20 pad10 matte shadow h300 f250">
+                            <div class="f _f_ fac w h50">
+                                <img class="contain" src="img/bank/b1.webp" alt="">
+                            </div>
+                            <div>
+                                <a href="">
+                                    Кредит наличными онлайн
+                                </a>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Сумма
+                                </span>
+                                <span>
+                                    До 3 000 000 $
+                                </span>
+                            </div>
+                            <div class="f w f_f _b_1b_c3">
+                                <span>
+                                    Срок
+                                </span>
+                                <span>
+                                    от 3 до 1000 лет
+                                </span>
+                            </div>
+                            <div>
+                                <a class="btn2">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w200 c">
+                <button class="btn">
+                    Все предложения
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section_3">
+
+        <div class="in pad50t pad50b">
+
+            <div class="f w f_f fw gap10">
+
+                <div class="f fc gap20 shadow pad20 f250">
+                    <div class="f gap10 f_f">
+                        <h3>
+                            Кредиты
+                        </h3>
+                        <img class="w50" src="img/icon/6.gif" alt="">
+                    </div>
+
+                    <ul class="f fc gap10">
+                        <li class="f gap10">
+                            <a href="">
+                                Онлайн-заявка
+                            </a>
+                            <span>
+                            10
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Наличными
+                            </a>
+                            <span>
+                            20
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без регистрации
+                            </a>
+                            <span>
+                            30
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без справок
+                            </a>
+                            <span>
+                            40
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Социальная
+                            </a>
+                            <span>
+                            50
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без отказа
+                            </a>
+                            <span>
+                            60
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f fc gap20 shadow pad20 f250">
+                    <div class="f gap10 f_f">
+                        <h3>
+                            Кредитные карты
+                        </h3>
+                        <img class="w50" src="img/icon/5.gif" alt="">
+                    </div>
+                    <ul class="f fc gap10">
+                        <li class="f gap10">
+                            <a href="">
+                                Онлайн-заявка
+                            </a>
+                            <span>
+                            10
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Наличными
+                            </a>
+                            <span>
+                            20
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без регистрации
+                            </a>
+                            <span>
+                            30
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без справок
+                            </a>
+                            <span>
+                            40
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Социальная
+                            </a>
+                            <span>
+                            50
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без отказа
+                            </a>
+                            <span>
+                            60
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="f fc gap20 shadow pad20 f250">
+                    <div class="f gap10 f_f">
+                        <h3>
+                            Дебетовые карты
+                        </h3>
+                        <img class="w50" src="img/icon/4.gif" alt="">
+                    </div>
+
+                    <ul class="f fc gap10">
+                        <li class="f gap10">
+                            <a href="">
+                                Онлайн-заявка
+                            </a>
+                            <span>
+                            10
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Наличными
+                            </a>
+                            <span>
+                            20
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без регистрации
+                            </a>
+                            <span>
+                            30
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без справок
+                            </a>
+                            <span>
+                            40
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Социальная
+                            </a>
+                            <span>
+                            50
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без отказа
+                            </a>
+                            <span>
+                            60
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f fc gap20 shadow pad20 f250">
+                    <div class="f gap10 f_f">
+                        <h3>
+                            Займы
+                        </h3>
+                        <img class="w50" src="img/icon/3.gif" alt="">
+                    </div>
+
+                    <ul class="f fc gap10">
+                        <li class="f gap10">
+                            <a href="">
+                                Онлайн-заявка
+                            </a>
+                            <span>
+                            10
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Наличными
+                            </a>
+                            <span>
+                            20
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без регистрации
+                            </a>
+                            <span>
+                            30
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без справок
+                            </a>
+                            <span>
+                            40
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Социальная
+                            </a>
+                            <span>
+                            50
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без отказа
+                            </a>
+                            <span>
+                            60
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="f fc gap20 shadow pad20 f250">
+                    <div class="f gap10 f_f">
+                        <h3>
+                            Ипотека
+                        </h3>
+                        <img class="w50" src="img/icon/2.gif" alt="">
+                    </div>
+
+                    <ul class="f fc gap10">
+                        <li class="f gap10">
+                            <a href="">
+                                Онлайн-заявка
+                            </a>
+                            <span>
+                            10
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Наличными
+                            </a>
+                            <span>
+                            20
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без регистрации
+                            </a>
+                            <span>
+                            30
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без справок
+                            </a>
+                            <span>
+                            40
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Социальная
+                            </a>
+                            <span>
+                            50
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без отказа
+                            </a>
+                            <span>
+                            60
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f fc gap20 shadow pad20 f250">
+                    <div class="f gap10 f_f">
+                        <h3>
+                            Вклады
+                        </h3>
+                        <img class="w50" src="img/icon/1.gif" alt="">
+                    </div>
+
+                    <ul class="f fc gap10">
+                        <li class="f gap10">
+                            <a href="">
+                                Онлайн-заявка
+                            </a>
+                            <span>
+                            10
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Наличными
+                            </a>
+                            <span>
+                            20
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без регистрации
+                            </a>
+                            <span>
+                            30
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без справок
+                            </a>
+                            <span>
+                            40
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Социальная
+                            </a>
+                            <span>
+                            50
+                        </span>
+                        </li>
+                        <li class="f gap10">
+                            <a href="">
+                                Без отказа
+                            </a>
+                            <span>
+                            60
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="section_4" class="b6 pad50t pad50b">
+        <div class="in f fc gap50">
+            <div class="f fc w gap20">
+                <h2 class="w _t_">
+                    Полезные статьи и финансовые советы
+                </h2>
+                <div class="f fac gap10 _f_ fw">
+                    <button class="btn">
+                        <span class="">
+                            Кредиты
+                        </span>
+                    </button>
+                    <button class="btn">
+                        <span>
+                            Кредитные карты
+                        </span>
+                    </button>
+                    <button class="btn">
+                        <span>
+                            Дебетовые карты
+                        </span>
+                    </button>
+                    <button class="btn">
+                        <span>
+                            Займы
+                        </span>
+                    </button>
+                    <button class="btn">
+                        <span>
+                            Ипотека
+                        </span>
+                    </button>
+                    <button class="btn">
+                        <span>
+                            Вклады
+                        </span>
+                    </button>
+                </div>
+                <div class="f w f_f fw gap10">
+
+                    <div class="f f250 fc shadow fac f_f gap10 pad5t pad5l pad5r pad20b">
+                        <img src="img/news/news1.webp" class="h150 cover" alt="">
+                        <div class="f f_f gap10 w fac">
+                            <span>
+                                01.01.2024
+                            </span>
+                            <button class="btn">
+                                Кредиты
+                            </button>
+                        </div>
+                        <a href="" class="c1">
+                            <h3>
+                                Заголовок 1
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="f f250 fc shadow fac f_f gap10 pad5t pad5l pad5r pad20b">
+                        <img src="img/news/news2.webp" class="h150 cover" alt="">
+                        <div class="f f_f gap10 w fac">
+                            <span>
+                                01.01.2024
+                            </span>
+                            <button class="btn">
+                                Займы
+                            </button>
+                        </div>
+                        <a href="" class="c1">
+                            <h3>
+                                Заголовок 2
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="f f250 fc shadow fac f_f gap10 pad5t pad5l pad5r pad20b">
+                        <img src="img/news/news3.webp" class="h150 cover" alt="">
+                        <div class="f f_f gap10 w fac">
+                            <span>
+                                01.01.2024
+                            </span>
+                            <button class="btn">
+                                Ипотека
+                            </button>
+                        </div>
+                        <a href="" class="c1">
+                            <h3>
+                                Заголовок 3
+                            </h3>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="w200 c">
+                <button class="btn">
+                    Все новости
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+</footer>
+
+</body>
+</html>

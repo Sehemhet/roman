@@ -1,0 +1,102 @@
+/*
+RESET
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    border:none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+button {
+    border:none;
+    all: initial;
+}
+a:hover,
+button:hover {
+    cursor:pointer;
+}
+img, iframe {
+    border:none;
+    height:100%;
+    width:100%;
+}
+input {
+    outline:none;
+}
+ul {
+    list-style:none;
+}
+header {
+    position: sticky;
+    z-index: 999;
+    top:0;
+    left:0;
+}
+header, main, section, footer {
+    width:100%;
+    overflow:hidden;
+}
+.in {
+    max-width:1200px;
+    margin:0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 100%;
+    line-height: normal;
+    color: inherit;
+    text-transform: none;
+    font-weight:700;
+}
+span, ul, li, p {
+    font-weight:400;
+}
+a {
+    color: var(--c2);
+    text-decoration:none;
+}
+a:hover {
+    transition:.2 easy;
+    color: var(--c3);
+}
+a:active {
+    transition:.2 easy;
+    color: var(--c3);
+}
+
+h1 {
+    font-size: 32px;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 24px;
+}
+h5 {
+    font-size: 24px;
+}
+h6 {
+    font-size: 24px;
+}
+p, ul, li {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+.point {
+    height:10px;
+    width:10px;
+    border:2px solid var(--c1);
+    background: var(--c1);
+}
+
+.point_li {
+    display:flex;
+}
+.point_li:before {
+    content: '';
+    display: flex;
+    height: 10px;
+    width: 10px;
+    margin: 5px 15px 0px 0px;
+    flex: 0 0 10px;
+}
+.point_li_c1:before {
+    background: var(--c1);
+}
+.point_li_c8:before {
+    background: var(--c8);
+}
+

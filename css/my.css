@@ -1,0 +1,15 @@
+@import url('reset.css');
+@import url('library.css');
+@import url('includes/back_btn.css');
+
+
+
+.tabs__block {
+    display:none;
+}
+.tabs__block:target {
+    display:flex;
+}
+.active-tab {
+    display: flex;
+}
