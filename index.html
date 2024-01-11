@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
-    <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="css/pre.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font1|Font2|Font3&display=swap">
     <title>Document</title>
 </head>
@@ -62,58 +62,38 @@
                     Лучшие предложения
                 </h2>
                 <div class="f fac gap10 _f_ fw">
-                    <button class="btn" onclick="showTab('tab_1')">
+                    <button class="btn" onclick="showTab1('tab_1')">
                         <span class="">
                             Кредиты
                         </span>
                     </button>
-                    <button class="btn" onclick="showTab('tab_2')">
+                    <button class="btn" onclick="showTab1('tab_2')">
                         <span>
                             Кредитные карты
                         </span>
                     </button>
-                    <button class="btn" onclick="showTab('tab_3')">
+                    <button class="btn" onclick="showTab1('tab_3')">
                         <span>
                             Дебетовые карты
                         </span>
                     </button>
-                    <button class="btn" onclick="showTab('tab_4')">
+                    <button class="btn" onclick="showTab1('tab_4')">
                         <span>
                             Займы
                         </span>
                     </button>
-                    <button class="btn" onclick="showTab('tab_5')">
+                    <button class="btn" onclick="showTab1('tab_5')">
                         <span>
                             Ипотека
                         </span>
                     </button>
-                    <button class="btn" onclick="showTab('tab_6')">
+                    <button class="btn" onclick="showTab1('tab_6')">
                         <span>
                             Вклады
                         </span>
                     </button>
                 </div>
 
-
-    <script>
-        // JavaScript для переключения табов
-        document.addEventListener("DOMContentLoaded", function() {
-            // Показать первый таб при загрузке страницы
-            showTab('tab_1');
-        });
-
-        function showTab(tabId) {
-            // Скрыть все табы
-            var tabs = document.querySelectorAll('.tabs__block');
-            tabs.forEach(function(tab) {
-                tab.classList.remove('active-tab');
-            });
-
-            // Показать выбранный таб
-            var selectedTab = document.getElementById(tabId);
-            selectedTab.classList.add('active-tab');
-        }
-    </script>
 
 
                 <div id="tab_1" class="f w f_f fw gap10 tabs__block">
@@ -897,6 +877,8 @@
                     </div>
                 </div>
 
+
+
             </div>
 
             <div class="w200 c">
@@ -1376,6 +1358,808 @@
         </div>
     </section>
 
+    <section id="section_5">
+        <div class="in f fc pad50t pad50b ">
+
+            <div class="credits_tab">
+
+                <div class="chapter_tab">
+                    <div class="chapter_tab_bank chapter_tab_item item">
+                        <span>
+                            Банк
+                        </span>
+                    </div>
+                    <div class="chapter_tab_name chapter_tab_item item">
+                        <span>
+                            Название
+                        </span>
+                    </div>
+                    <div class="chapter_tab_sum chapter_tab_item item">
+                        <span>
+                            Сумма и срок
+                        </span>
+                        <span class="color_link">
+                            &#8595;
+                        </span>
+                    </div>
+                    <div class="chapter_tab_price chapter_tab_item item">
+                        <span>
+                            Полная стоимость
+                        </span>
+                    </div>
+                    <div class="chapter_tab_stavka chapter_tab_item item">
+                        <span>
+                            Ставка
+                        </span>
+                        <span class="color_link">
+                            &#8595;
+                        </span>
+                    </div>
+                    <div class="chapter_tab_condition chapter_tab_item item">
+                        <span>
+                            Условия
+                        </span>
+                    </div>
+                    <div class="chapter_tab_aplication chapter_tab_item item">
+                        <span>
+                            Заявка
+                        </span>
+                    </div>
+                </div>
+
+                <div class="posts_tab">
+                    <div class="post">
+                        <div class="posts_tab_post">
+                            <div class="posts_tab_post_bank">
+                                <div class="posts_tab_post_bank_img post_item item">
+                                    <img class="contain" src="img/bank/b2.webp" alt="">
+                                    <button class="color_link more" onclick="OpenPosts()">
+                                        <span>
+                                            Еще
+                                        </span>
+                                        <span>
+                                            &#8595;
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="posts_tab_post_bank_name post_item item">
+                                <span>
+                                    Название 1
+                                </span>
+                                </div>
+                                <div class="posts_tab_post_bank_sum post_item item">
+                                <span>
+                                    до 1 млн $
+                                </span>
+                                </div>
+                                <div class="posts_tab_post_bank_price post_item item">
+                                <span>
+                                    1.713 % - 10.123 %
+                                </span>
+                                </div>
+                                <div class="posts_tab_post_bank_stavka post_item item">
+                                <span>
+                                    от 1.1 %
+                                </span>
+                                </div>
+                                <div class="posts_tab_post_bank_condition NONE900 post_item item">
+                                    <p>
+                                        Только паспорт гражданина МИРА
+                                    </p>
+                                    <p>
+                                        Без справки о доходах
+                                    </p>
+                                    <p>
+                                        Возраст от 1 до 18 лет
+                                    </p>
+                                    <p>
+                                        Без поручительства
+                                    </p>
+                                </div>
+                                <div class="posts_tab_post_bank_aplication post_item item">
+                                <span>
+                                    Лиц. №316
+                                </span>
+                                    <button class="btn2">
+                                    <span>
+                                        подать заявку
+                                    </span>
+                                    </button>
+                                    <button class="color_link link f _f_ gap10 fac" onclick="toggleFlex1()">
+                                    <span>
+                                        Детали
+                                    </span>
+                                        <div class="arrow1">
+                                        <span class="">
+                                            >
+                                        </span>
+                                        </div>
+
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="box1 f fc w gap10">
+                                <div class="posts_tab_post_tab">
+                                    <button class="btn" onclick="showTab('post_tab_1')">
+                                <span class="">
+                                    Условия
+                                </span>
+                                    </button>
+                                    <button class="btn" onclick="showTab('post_tab_2')">
+                                <span>
+                                    Требования
+                                </span>
+                                    </button>
+                                    <button class="btn" onclick="showTab('post_tab_3')">
+                                <span>
+                                    Документы
+                                </span>
+                                    </button>
+                                    <button class="btn" onclick="showTab('post_tab_4')">
+                                <span>
+                                    Промер расчета
+                                </span>
+                                    </button>
+                                </div>
+                                <div class="posts_tab_post_tab_item">
+
+                                    <div class="tab_post_block">
+                                        <div id="post_tab_1" class="tab_post_block_item">
+                                            <ul class="fs16 f fc gap10 w">
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Сумма кредита
+                                            </span>
+                                                    <span>
+                                                от 3 до 5к
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Срок кредитования
+                                            </span>
+                                                    <span>
+                                                от 3 до 84 месяцев
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Срок рассмотрения заявки
+                                            </span>
+                                                    <span>
+                                                В течение часа
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Комиссия
+                                            </span>
+                                                    <span>
+                                                без комиссий и поручителей
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Штраф
+                                            </span>
+                                                    <span>
+                                                Нет
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="post_tab_2" class="tab_post_block_item">
+                                            <ul class="fs16 f fc gap10 w">
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Возраст заемщика
+                                            </span>
+                                                    <span>
+                                                От 18 до 70 лет
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Гражданство МИРА
+                                            </span>
+                                                    <span>
+                                                Требуется
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Регистрация
+                                            </span>
+                                                    <span>
+                                                Постоянная
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Стаж в последнем месте
+                                            </span>
+                                                    <span>
+                                                Не важно
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="post_tab_3" class="tab_post_block_item">
+                                            <ul class="fs16 f fc gap10 w">
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Обязательные документы
+                                            </span>
+                                                    <span>
+                                                Паспорт
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Необязательные документы
+                                            </span>
+                                                    <span>
+                                                Справка о доходах
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Подтверждение дохода
+                                            </span>
+                                                    <span>
+                                                Справка по форм
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Залог
+                                            </span>
+                                                    <span>
+                                                Не требуется
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="post_tab_4" class="tab_post_block_item">
+                                            <ul class="fs16 f fc gap10 w">
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Пример 1
+                                            </span>
+                                                    <span>
+                                                от 3 до 5к
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Пример 2
+                                            </span>
+                                                    <span>
+                                                от 3 до 84 месяцев
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Пример 3
+                                            </span>
+                                                    <span>
+                                                В течение часа
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Пример 4
+                                            </span>
+                                                    <span>
+                                                без комиссий и поручителей
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="posts_tab_post_next">
+                            <div class="posts_tab_post_bank">
+                                <div class="posts_tab_post_bank_img post_item item">
+
+                                </div>
+                                <div class="posts_tab_post_bank_name post_item item">
+                                <span>
+                                    Название 1
+                                </span>
+                                </div>
+                                <div class="posts_tab_post_bank_sum post_item item">
+                                <span>
+                                    до 1 млн $
+                                </span>
+                                </div>
+                                <div class="posts_tab_post_bank_price post_item item">
+                                <span>
+                                    1.713 % - 10.123 %
+                                </span>
+                                </div>
+                                <div class="posts_tab_post_bank_stavka post_item item">
+                                <span>
+                                    от 1.1 %
+                                </span>
+                                </div>
+                                <div class="posts_tab_post_bank_condition NONE900 post_item item">
+                                    <p>
+                                        Только паспорт гражданина МИРА
+                                    </p>
+                                    <p>
+                                        Без справки о доходах
+                                    </p>
+                                    <p>
+                                        Возраст от 1 до 18 лет
+                                    </p>
+                                    <p>
+                                        Без поручительства
+                                    </p>
+                                </div>
+                                <div class="posts_tab_post_bank_aplication post_item item">
+                                <span>
+                                    Лиц. №316
+                                </span>
+                                    <button class="btn2">
+                                    <span>
+                                        подать заявку
+                                    </span>
+                                    </button>
+                                    <button class="color_link link f _f_ gap10 fac" onclick="toggleFlex2()">
+                                    <span>
+                                        Детали
+                                    </span>
+                                        <div class="arrow2">
+                                            <span class="">
+                                                >
+                                            </span>
+                                        </div>
+
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="box2 f fc w gap10">
+                                <div class="posts_tab_post_tab">
+                                    <button class="btn" onclick="showTab('post_tab_5')">
+                                <span class="">
+                                    Условия
+                                </span>
+                                    </button>
+                                    <button class="btn" onclick="showTab('post_tab_6')">
+                                <span>
+                                    Требования
+                                </span>
+                                    </button>
+                                    <button class="btn" onclick="showTab('post_tab_7')">
+                                <span>
+                                    Документы
+                                </span>
+                                    </button>
+                                    <button class="btn" onclick="showTab('post_tab_8')">
+                                <span>
+                                    Промер расчета
+                                </span>
+                                    </button>
+                                </div>
+                                <div class="posts_tab_post_tab_item">
+
+                                    <div class="tab_post_block">
+                                        <div id="post_tab_5" class="tab_post_block_item ">
+                                            <ul class="fs16 f fc gap10 w">
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Сумма кредита
+                                            </span>
+                                                    <span>
+                                                от 3 до 5к
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Срок кредитования
+                                            </span>
+                                                    <span>
+                                                от 3 до 84 месяцев
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Срок рассмотрения заявки
+                                            </span>
+                                                    <span>
+                                                В течение часа
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Комиссия
+                                            </span>
+                                                    <span>
+                                                без комиссий и поручителей
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Штраф
+                                            </span>
+                                                    <span>
+                                                Нет
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="post_tab_6" class="tab_post_block_item ">
+                                            <ul class="fs16 f fc gap10 w">
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Возраст заемщика
+                                            </span>
+                                                    <span>
+                                                От 18 до 70 лет
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Гражданство МИРА
+                                            </span>
+                                                    <span>
+                                                Требуется
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Регистрация
+                                            </span>
+                                                    <span>
+                                                Постоянная
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Стаж в последнем месте
+                                            </span>
+                                                    <span>
+                                                Не важно
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="post_tab_7" class="tab_post_block_item ">
+                                            <ul class="fs16 f fc gap10 w">
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Обязательные документы
+                                            </span>
+                                                    <span>
+                                                Паспорт
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Необязательные документы
+                                            </span>
+                                                    <span>
+                                                Справка о доходах
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Подтверждение дохода
+                                            </span>
+                                                    <span>
+                                                Справка по форм
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Залог
+                                            </span>
+                                                    <span>
+                                                Не требуется
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="post_tab_8" class="tab_post_block_item ">
+                                            <ul class="fs16 f fc gap10 w">
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Пример 1
+                                            </span>
+                                                    <span>
+                                                от 3 до 5к
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Пример 2
+                                            </span>
+                                                    <span>
+                                                от 3 до 84 месяцев
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Пример 3
+                                            </span>
+                                                    <span>
+                                                В течение часа
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Пример 4
+                                            </span>
+                                                    <span>
+                                                без комиссий и поручителей
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="posts_tab_post_next">
+                            <div class="posts_tab_post_bank">
+                                <div class="posts_tab_post_bank_img post_item item">
+
+                                </div>
+                                <div class="posts_tab_post_bank_name post_item item">
+                                <span>
+                                    Название 1
+                                </span>
+                                </div>
+                                <div class="posts_tab_post_bank_sum post_item item">
+                                <span>
+                                    до 1 млн $
+                                </span>
+                                </div>
+                                <div class="posts_tab_post_bank_price post_item item">
+                                <span>
+                                    1.713 % - 10.123 %
+                                </span>
+                                </div>
+                                <div class="posts_tab_post_bank_stavka post_item item">
+                                <span>
+                                    от 1.1 %
+                                </span>
+                                </div>
+                                <div class="posts_tab_post_bank_condition NONE900 post_item item">
+                                    <p>
+                                        Только паспорт гражданина МИРА
+                                    </p>
+                                    <p>
+                                        Без справки о доходах
+                                    </p>
+                                    <p>
+                                        Возраст от 1 до 18 лет
+                                    </p>
+                                    <p>
+                                        Без поручительства
+                                    </p>
+                                </div>
+                                <div class="posts_tab_post_bank_aplication post_item item">
+                                <span>
+                                    Лиц. №316
+                                </span>
+                                    <button class="btn2">
+                                    <span>
+                                        подать заявку
+                                    </span>
+                                    </button>
+                                    <button class="color_link link f _f_ gap10 fac" onclick="toggleFlex3()">
+                                    <span>
+                                        Детали
+                                    </span>
+                                        <div class="arrow3">
+                                        <span class="">
+                                            >
+                                        </span>
+                                        </div>
+
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="box3 f fc w gap10">
+                                <div class="posts_tab_post_tab">
+                                    <button class="btn" onclick="showTab('post_tab_9')">
+                                <span class="">
+                                    Условия
+                                </span>
+                                    </button>
+                                    <button class="btn" onclick="showTab('post_tab_10')">
+                                <span>
+                                    Требования
+                                </span>
+                                    </button>
+                                    <button class="btn" onclick="showTab('post_tab_11')">
+                                <span>
+                                    Документы
+                                </span>
+                                    </button>
+                                    <button class="btn" onclick="showTab('post_tab_12')">
+                                <span>
+                                    Промер расчета
+                                </span>
+                                    </button>
+                                </div>
+                                <div class="posts_tab_post_tab_item">
+
+                                    <div class="tab_post_block">
+                                        <div id="post_tab_9" class="tab_post_block_item">
+                                            <ul class="fs16 f fc gap10 w">
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Сумма кредита
+                                            </span>
+                                                    <span>
+                                                от 3 до 5к
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Срок кредитования
+                                            </span>
+                                                    <span>
+                                                от 3 до 84 месяцев
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Срок рассмотрения заявки
+                                            </span>
+                                                    <span>
+                                                В течение часа
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Комиссия
+                                            </span>
+                                                    <span>
+                                                без комиссий и поручителей
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Штраф
+                                            </span>
+                                                    <span>
+                                                Нет
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="post_tab_10" class="tab_post_block_item">
+                                            <ul class="fs16 f fc gap10 w">
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Возраст заемщика
+                                            </span>
+                                                    <span>
+                                                От 18 до 70 лет
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Гражданство МИРА
+                                            </span>
+                                                    <span>
+                                                Требуется
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Регистрация
+                                            </span>
+                                                    <span>
+                                                Постоянная
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Стаж в последнем месте
+                                            </span>
+                                                    <span>
+                                                Не важно
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="post_tab_11" class="tab_post_block_item">
+                                            <ul class="fs16 f fc gap10 w">
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Обязательные документы
+                                            </span>
+                                                    <span>
+                                                Паспорт
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Необязательные документы
+                                            </span>
+                                                    <span>
+                                                Справка о доходах
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Подтверждение дохода
+                                            </span>
+                                                    <span>
+                                                Справка по форм
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Залог
+                                            </span>
+                                                    <span>
+                                                Не требуется
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="post_tab_12" class="tab_post_block_item">
+                                            <ul class="fs16 f fc gap10 w">
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Пример 1
+                                            </span>
+                                                    <span>
+                                                от 3 до 5к
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Пример 2
+                                            </span>
+                                                    <span>
+                                                от 3 до 84 месяцев
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Пример 3
+                                            </span>
+                                                    <span>
+                                                В течение часа
+                                            </span>
+                                                </li>
+                                                <li class="f f_f gap50 fw w">
+                                            <span>
+                                                Пример 4
+                                            </span>
+                                                    <span>
+                                                без комиссий и поручителей
+                                            </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
 
 </main>
 
@@ -1384,6 +2168,6 @@
 <footer>
 
 </footer>
-
+<script src="my.js"></script>
 </body>
 </html>

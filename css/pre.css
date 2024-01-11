@@ -396,3 +396,243 @@ btn2
     display: -ms-flexbox;
     display: flex;
 }
+
+
+
+.tabs__block {
+    display:none;
+}
+.active-tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/*
+CREDITS TABL
+*/
+.credits_tab {
+    min-height:80vh;
+}
+
+.credits_tab {
+
+}
+
+.chapter_tab {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    border:1px solid grey;
+}
+
+.item {
+    padding:5px 5px 5px 5px;
+    border:1px solid grey;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+}
+
+.chapter_tab_sum {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+}
+.chapter_tab_stavka {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+}
+
+
+.posts_tab {
+
+}
+
+.posts_tab_post_active {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    gap:10px;
+}
+
+.posts_tab_post_bank {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+}
+
+
+.posts_tab_post_bank_aplication {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
+    gap:5px;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+}
+.posts_tab_post_bank_img {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    gap:10px;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+}
+.posts_tab_post_bank_name,
+ .posts_tab_post_bank_sum,
+  .posts_tab_post_bank_price,
+  .posts_tab_post_bank_stavka,
+   .posts_tab_post_bank_condition {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    gap:5px;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+}
+.posts_tab_post_bank_condition * {
+    font-size:14px;
+}
+.post_item {
+    min-height:120px;
+}
+@media (max-width: 900px) {
+    .NONE900 p {
+        display: none;
+    }
+    .chapter_tab_item span:nth-child(1) {
+        -webkit-writing-mode: vertical-lr;
+            -ms-writing-mode: tb-lr;
+                writing-mode: vertical-lr;
+        text-orientation:upright;
+    }
+}
+
+.color_link {
+    color: var(--c2);
+}
+.color_link:hover {
+    color: var(--c5);
+}
+.color_link:active {
+    color: red;
+}
+.posts_tab_post_bank_aplication button {
+    height:30px;
+    -webkit-box-flex:1;
+        -ms-flex:1 1 auto;
+            flex:1 1 auto;
+}
+
+.posts_tab_post_tab {
+    padding:10px 0px 10px 0px;
+}
+
+.posts_tab_post_tab {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    gap:10px;
+}
+.posts_tab_post_tab_item {
+    min-height:300px;
+}
+.tab_post_block {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    width:100%;
+    -webkit-box-pack:start;
+        -ms-flex-pack:start;
+            justify-content:flex-start;
+    gap:10px;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+}
+.tab_post_block_item {
+    max-width:500px;
+    display:none;
+}
+.tab_post_block_item_active {
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+}
+
+.fs16 * {
+    font-size:16px;
+}
+
+
+
+.box1,
+ .box2,
+ .box3 {
+    display:none;
+}
+.arrow1,
+ .arrow2,
+ .arrow3 {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+}
+.arrow_active {
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+}
+
+.posts_tab_post_next {
+    display: none;
+}
+
+.posts_tab_post_next_active {
+    display: block;
+}
